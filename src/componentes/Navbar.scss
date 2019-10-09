@@ -1,40 +1,78 @@
-.Navbar {
-  nav {
-    width: 100%;
-    height: 70px;
-    background-color: orange;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    #menu-hamburguer {
-      width: 50px;
-      height: 40%;
+.Navbar{
+    
+
+
+  @media(min-width:500px){
+    nav {
+      width: 100%;
+      height: 70px;
+      background-color: rgb(63, 65, 73);
       display: flex;
-      justify-content: space-around;
       align-items: center;
-      flex-direction: column;
-      span {
-        width: 100%;
-        height: 5px;
-        background-color: white;
-        border-radius: 20px;
+      justify-content: center;
+      #menu-hamburguer {
+        width: 50px;
+        height: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        span {
+          width: 100%;
+          height: 5px;
+          background-color: white;
+          border-radius: 20px;
+          transition: 0.5s;
+        }
+        .tiro1{
+          transform:rotate(-45deg);
+          transform-origin: right  center;
+        }
+        .tiro2{
+          transform: translateX(-70vw);
+        }
+        .tiro3{
+          transform:rotate(45deg);
+          transform-origin:right center;
+          position:relative;
+          top:8px;
+          margin-top: 24px;
+        } 
       }
     }
-  }
-  .menu {
-    width: 100%;
-    height: 400px;
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    transform: translateX(-100%);
-    transition: 0.4s;
-    a {
-      margin-left: 30px;
+    .menu {
+      width: 100%;
+      height: 400px;
+      background-color: rgb(89, 80, 104);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      transform: translateX(-100%);
+      transition: 0.4s;
+      position:absolute;
+      top:70px;
+      left:0;
+
+      a {
+        margin-left: 30px;
+        text-decoration: none;
+        color:black;
+        font-size: 25px;
+
+      }
     }
-  }
-  .ativo {
-    transform: translateX(0);
+    .ativo {
+      transform: translateX(0);
+    }
+    
   }
 }
+  
+
+
+
+
+
+
+
